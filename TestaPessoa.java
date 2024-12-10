@@ -1,15 +1,15 @@
-package Atividade2;
+package Exercicios10122024;
 
 public class TestaPessoa {
-	
+
 	public static void main(String[] args) {
+		Pessoa aluno = new Pessoa ("Josué Xavier", 2121);
 		
-		Pessoa p1 = new Pessoa ("Wanessa", 19);
-		System.out.println(p1.toString());
-		System.out.println("Agora em 2026");
+		aluno.adicionarNota(2.1);
+		aluno.adicionarNota(10.0);
+		aluno.adicionarNota(0.0);
 		
-		p1.fazAniversario();
-		p1.fazAniversario();
-		System.out.println("Depois "+p1);
+		System.out.println(aluno.toString());
 	}
+
 }
